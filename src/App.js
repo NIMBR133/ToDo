@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.scss'
+import AddTask from './Components/AddTask/AddTask'
+import TasksList from './Components/TasksList/TasksList';
+
+const App = () => {
+	return (
+		<div className="App">
+			<Container fluid>
+				<Row className="justify-content-md-center">
+					<Col>
+						<AddTask />
+					</Col>
+				</Row>
+				<TasksList />
+			</Container>
+		</div>
+	);
 }
 
-export default App;
+export default App

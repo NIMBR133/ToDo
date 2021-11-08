@@ -1,0 +1,17 @@
+body {
+    background: #4285B4;
+}
+.App {
+    margin: 60px 100px;
+    padding: 10px 80px;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.errors {
+    color: red;
+    &_input {
+        margin-top: -16px;
+    }
+}
